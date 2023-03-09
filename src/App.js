@@ -11,7 +11,20 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <img src={vector} className="App-first-vector" alt="vector" />
           <img src={Vector2} className="App-sec-vector" alt="vector" />
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <div className="header">
+            <h1 className="h1-honePage">נעים להכיר, Mento</h1>
+            <p className="p-honePage">
+              על כל משרת סטודנט וג׳וניור בהייטק יש עשרות ואף מאות מועמדים.
+              <br></br>
+              <br></br>
+              הצטרפו אלינו לליווי אישי שנעשה על ידי מנטוריות ומנטורים מנוסים
+              מהתעשיה, <br></br> ותקבלו כלים שיזניקו את הסיכויים שלכם למצוא את
+              המשרה שאתם רוצים!
+            </p>
+            <br></br>
+            <br></br>
+            <button>להצטרפות</button>
+          </div>
         </div>
       </section>
       <section className="section2"></section>
