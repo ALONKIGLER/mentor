@@ -6,7 +6,11 @@ import "./App.css";
 import { useState, useEffect, useRef } from "react";
 
 function App() {
-  const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+  const colors = [
+    <div className="hmlazot">המליצו עלינו ... הדס</div>,
+    <div className="hmlazot">המליצו עלינו ... רוני</div>,
+    <div className="hmlazot">המליצו עלינו ... ליאט</div>,
+  ];
   const delay = 2500;
 
   const [index, setIndex] = useState(0);
@@ -88,11 +92,9 @@ function App() {
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
               {colors.map((backgroundColor, index) => (
-                <div
-                  className="slide"
-                  key={index}
-                  style={{ backgroundColor }}
-                ></div>
+                <div className="slide" key={index}>
+                  {backgroundColor}
+                </div>
               ))}
             </div>
           </div>
